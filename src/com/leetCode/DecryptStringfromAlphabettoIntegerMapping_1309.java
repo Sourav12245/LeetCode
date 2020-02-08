@@ -1,12 +1,21 @@
 package com.leetCode;
 
 import java.util.Stack;
+import java.util.concurrent.TimeUnit;
 
 public class DecryptStringfromAlphabettoIntegerMapping_1309 {
 
 	public static void main(String[] args) {
 		String s = "1259";
+		
+		//execution start
+		long start = System.nanoTime();
+		
 		System.out.println(freqAlphabets(s));
+		
+		//execution ends
+		long end = System.nanoTime();
+		timer_Checker(start, end);
 	}
 	
 	
@@ -54,5 +63,38 @@ public class DecryptStringfromAlphabettoIntegerMapping_1309 {
 			String str = Character.toString((char)value);
 			return str;
 		}
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    private static void timer_Checker(long start, long end) {
+	    	long fi = end-start;
+	    	System.out.println("=========================================");
+	    	System.out.println("Nano :"+fi/1000+"k ns");
+	    	System.out.println("Mili :"+TimeUnit.MILLISECONDS.convert(fi, TimeUnit.NANOSECONDS)+" ms");
+	    	System.out.println("Sec  :"+TimeUnit.SECONDS.convert(fi, TimeUnit.NANOSECONDS)+ " s");
+	    }
+	    
+	    
+	    
+	    
+	    
+	    
+	    
 
 }
